@@ -73,7 +73,7 @@
   position: absolute;
   color: #fff;
   background: #4f93d6;
-  cursor: pointer;
+  cursor: pointer !important;
   z-index: 10; }
   .jq-schedule .sc_bar .head {
     display: block;

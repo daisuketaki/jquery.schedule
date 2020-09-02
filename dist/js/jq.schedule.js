@@ -378,7 +378,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
         var st = Math.ceil((data.startTime - saveData.tableStartTime) / setting.widthTime);
         var et = Math.floor((data.endTime - saveData.tableStartTime) / setting.widthTime);
-        var $bar = $('<div class="sc_bar"><span class="head"><span class="time"></span></span><span class="text"></span></div>');
+        var $bar = $('<a href="test" class="sc_bar"><span class="head"><span class="time"></span></span><span class="text"></span></a>');
         var stext = methods.formatTime(data.startTime);
         var etext = methods.formatTime(data.endTime);
 
@@ -392,6 +392,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         });
         $bar.find('.time').text(stext + '-' + etext);
 
+
         if (data.text) {
           $bar.find('.text').text(data.text);
         }
@@ -399,6 +400,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         if (data.class) {
           $bar.addClass(data.class);
         } // $this.find('.sc_main').append($bar);
+
+        if(data.data.link){
+          $bar.attr("href",data.data.link);
+        }
 
 
         var $row = $this.find('.sc_main .timeline').eq(timeline);
