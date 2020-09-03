@@ -1,5 +1,17 @@
+Forked from ateliee
+
+#内容
+-スケジュールのバーにリンクが設定できるように変更。
+modified that link at schedule bar. 
+
+-REST API (WORDPRESS）のJSONを拾ってタイムスケジュールに反映させる
+
+
+
 jq.Schedule
 ===============
+
+
 
 [![npm version](https://badge.fury.io/js/jq.schedule.svg)](https://badge.fury.io/js/jq.schedule)
 [![Build Status](https://travis-ci.com/ateliee/jquery.schedule.svg?branch=master)](https://travis-ci.com/ateliee/jquery.schedule)
